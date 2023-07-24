@@ -45,7 +45,7 @@ export default function Contacts({ contacts, changeChat }) {
         <Container>
           <div className="brand">
             <img src={Logo} alt="logo" />
-            <h3>Resolver</h3>
+            <h3>QuickChat</h3>
          <IconButton onClick={handleButtonClick}>
            <DonutLargeIcon className="donut" />
          </IconButton>

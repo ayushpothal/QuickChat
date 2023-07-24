@@ -119,7 +119,7 @@ export default function Register() {
         <form action="" onSubmit={(event) => handleSubmit(event)}>
           <div className="brand">
             <img src={Logo} alt="logo" />
-            <h1>RESOLVER</h1>
+            <h1>QuickChat</h1>
           </div>
           <div className="roletype">
           <input 
