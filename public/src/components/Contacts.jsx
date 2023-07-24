@@ -2,7 +2,21 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Logo from "../assets/logo.png";
 import { Avatar, ClickAwayListener, IconButton } from "@material-ui/core";
-import DonutLargeIcon from '@mui/icons-material/DonutLarge'
+import DonutLargeIcon from '@mui/icons-material/DonutLarge';
+import { useNavigate } from 'react-router-dom';
+
+export default function Contacts({ contacts, changeChat }) {
+  const navigate = useNavigate();
+  
+  
+
+  const handleButtonClick = () => {
+    navigate('/targetpage');
+  };
+
+  
+}
+
 
 //write a function for broadcast message
 
@@ -21,6 +35,10 @@ export default function Contacts({ contacts, changeChat }) {
     setCurrentSelected(index);
     changeChat(contact);
   };
+  // const handleButtonClick = () => {
+  //   history.push('/targetpage');
+  // };
+  
   return (
     <>
       {currentUserImage && currentUserImage && (
@@ -28,15 +46,9 @@ export default function Contacts({ contacts, changeChat }) {
           <div className="brand">
             <img src={Logo} alt="logo" />
             <h3>Resolver</h3>
-            <IconButton
-            onClick={() =>
-              alert(
-                "Not added this functionality.\nClick on three dots to logout and add new room."
-              )
-            }
-          >
-          <DonutLargeIcon className="donut"/>
-          </IconButton>
+         <IconButton onClick={handleButtonClick}>
+           <DonutLargeIcon className="donut" />
+         </IconButton>
           </div>
           <div className="contacts">
             {contacts.map((contact, index) => {
