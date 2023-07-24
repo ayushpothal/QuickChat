@@ -1,7 +1,4 @@
-# Resolver - Town Complaint System
-The web app is a township complaint system designed to provide a platform for residents to report and address issues within their community.
- It serves as a centralized hub where users can submit complaints, interact with the respective authorities, and track the progress of their complaints.
- It has an integrated chat application that enables users to have direct communication with the authorities handling their complaints.
+# QuickChat
 
 ## Installation Guide
 
